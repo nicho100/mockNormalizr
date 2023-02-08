@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <h1 style="color:blue">Centro de Mensajes</h1>
+    <div id="compresion"></div> 
+</head>
+<body>
+    
+    <div class="container">
+        <form id="messageForm">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" aria-describedby="email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <input type="text" class="form-control" id="message" name="message"aria-describedby="message">
+            </div>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre"aria-describedby="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido"aria-describedby="apellido">
+            </div>
+            <div class="mb-3">
+                <label for="edad" class="form-label">Edad:</label>
+                <input type="text" class="form-control" id="edad" name="edad"aria-describedby="edad">
+            </div>
+            <div class="mb-3">
+                <label for="alias" class="form-label">Alias:</label>
+                <input type="text" class="form-control" id="alias" name="alias"aria-describedby="alias">
+            </div>
+            <div class="mb-3">
+                <label for="avatar" class="form-label">Avatar:</label>
+                <input type="text" class="form-control" id="avatar" name="avatar"aria-describedby="avatar">
+            </div>
+
+    <button type="button" onclick="sendMessage(messageForm)" class="btn btn-primary">Submit</button>
+</form>
+<div id="chatContent">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+    <script src="./principal.js"></script> 
+</div>
+</div>
+    </body>
